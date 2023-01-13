@@ -1,11 +1,8 @@
-/* 212010102 Tabei Kota*/
-
-
 #include<stdio.h>
 #include<stdlib.h>
 
 
-/*\‘¢‘Ìcell‚Ì’è‹`*/
+/*ï¿½\ï¿½ï¿½ï¿½ï¿½cellï¿½Ì’ï¿½`*/
 struct cell
  {
  int element;
@@ -13,7 +10,7 @@ struct cell
  };
 
 
-/*pushŠÖ” @ƒXƒ^ƒbƒN‚Ìæ“ª‚ÉintŒ^‚Ìƒf[ƒ^x‚ğ‘}“ü‚·‚é*/
+/*pushï¿½Öï¿½ ï¿½@ï¿½Xï¿½^ï¿½bï¿½Nï¿½Ìæ“ªï¿½ï¿½intï¿½^ï¿½Ìƒfï¿½[ï¿½^xï¿½ï¿½}ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/
 struct cell*push(int x, struct cell*init)
  {
  struct cell*q,*r;
@@ -27,7 +24,7 @@ struct cell*push(int x, struct cell*init)
  }
 
 
-/*popŠÖ”@ƒXƒ^ƒbƒN‚Ìæ“ª‚Ìƒf[ƒ^‚ğíœ‚·‚é*/
+/*popï¿½Öï¿½ï¿½@ï¿½Xï¿½^ï¿½bï¿½Nï¿½Ìæ“ªï¿½Ìƒfï¿½[ï¿½^ï¿½ï¿½ï¿½íœï¿½ï¿½ï¿½ï¿½*/
 struct cell*pop(struct cell*init)
  {
  struct cell*q;
@@ -41,8 +38,8 @@ struct cell*pop(struct cell*init)
   }
 
 
-/*outputŠÖ”@
-ƒXƒ^ƒbƒN‚Ì’†‚Ìƒf[ƒ^‚ğƒ|ƒCƒ“ƒ^p‚ÌˆÊ’u‚©‚çÅŒã‚Ü‚Å‡‚É•\¦‚·‚é*/
+/*outputï¿½Öï¿½ï¿½@
+ï¿½Xï¿½^ï¿½bï¿½Nï¿½Ì’ï¿½ï¿½Ìƒfï¿½[ï¿½^ï¿½ï¿½ï¿½|ï¿½Cï¿½ï¿½ï¿½^pï¿½ÌˆÊ’uï¿½ï¿½ï¿½ï¿½ÅŒï¿½Ü‚Åï¿½ï¿½É•\ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/
 void output(struct cell*p)
 {
  while(p!=NULL)
@@ -53,7 +50,7 @@ void output(struct cell*p)
 }
 
 
-/*mainŠÖ”*/
+/*mainï¿½Öï¿½*/
 int main(void)
  {
  struct cell*init;
@@ -63,7 +60,7 @@ int main(void)
  printf("n=");
  scanf("%d",&n);
  
-/*3‚Ì”{”‚Ìƒf[ƒ^‚¾‚¯‘}“ü*/
+/*3ï¿½Ì”{ï¿½ï¿½ï¿½Ìƒfï¿½[ï¿½^ï¿½ï¿½ï¿½ï¿½ï¿½}ï¿½ï¿½*/
  for(i=1;i<=n;i++){
  if(i%3==0||i/10==3||i%10==3)
   init=push(i,init);
